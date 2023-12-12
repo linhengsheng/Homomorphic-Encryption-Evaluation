@@ -290,8 +290,8 @@ def evaluate(vector, test_num=100):
         temp = vector.mul(vector)
         mul_end_time = time.time()
         add_time = (add_end_time - add_start_time)*1000
-        mul_time = (dot_end_time - add_end_time)*1000
-        dot_time = (mul_end_time - dot_end_time)*1000
+        dot_time = (dot_end_time - add_end_time)*1000
+        mul_time = (mul_end_time - dot_end_time)*1000
         add_times.append(add_time)
         mul_times.append(mul_time)
         dot_times.append(dot_time)
